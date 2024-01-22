@@ -9,7 +9,7 @@ const copyDir = async (source = mainPath, dist = copyPath) => {
     await fs.access(dist);
     await fs.rm(dist, { recursive: true });
   } catch (err) {
-    console.log('Error: ' + err.message);
+    console.log('');
   }
 
   await fs.mkdir(dist, { recursive: true });
